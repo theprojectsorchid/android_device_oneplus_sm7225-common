@@ -29,9 +29,6 @@ $(call inherit-product, vendor/oneplus/sm7225-common/sm7225-common-vendor.mk)
 # Inherit WfdCommon from vendor/oneplus/extras
 $(call inherit-product, vendor/oneplus/extras/WfdCommon.mk)
 
-# Inherit OPCamera from vendor/oneplus/apps
-$(call inherit-product, vendor/oneplus/apps/ebba/config.mk)
-
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
